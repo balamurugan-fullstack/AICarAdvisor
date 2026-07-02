@@ -1,59 +1,177 @@
 # AI Car Advisor
 
-<img src="data:image/jpeg;base64,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" alt="Sedan sample" style="max-width:100%; height:auto;" />
+A full-stack proof-of-concept application that recommends cars to users based on budget and preference inputs. Built with a typed React frontend and an Express API backend, with server-side scoring logic driving the recommendations.
 
-## What did you build and why?
+![Sedan sample](./assets/sedan-sample.jpg)
 
-I built an AI Car Advisor that combines a TypeScript/React frontend with an Express backend to help users find car recommendations based on their budget and preference inputs. The goal was to make a fast, polished proof-of-concept for personalized car search, prioritizing usability, validation, and responsive recommendation cards.
+## Table of Contents
 
-## What did you deliberately cut?
+- [AI Car Advisor](#ai-car-advisor)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Tech Stack](#tech-stack)
+  - [Project Structure](#project-structure)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Running locally](#running-locally)
+  - [Environment Variables](#environment-variables)
+  - [API](#api)
+    - [`POST /api/recommendations`](#post-apirecommendations)
+  - [Scripts](#scripts)
+  - [Scope \& Limitations](#scope--limitations)
+  - [Roadmap](#roadmap)
+    - [Build notes (AI-assisted development)](#build-notes-ai-assisted-development)
 
-- No authentication or user account persistence.
-- No production dataset or external car API integration.
-- No advanced state management library or offline support.
-- No full image asset pipeline; the README embeds the sample image directly as requested.
-- No deployment automation or CI configuration.
+## Overview
 
-## What’s your tech stack and why did you pick it?
+AI Car Advisor takes a user's budget and stated preferences, sends them to a backend scoring service, and returns ranked car recommendations rendered as responsive cards on the frontend. It was built as a fast, polished proof-of-concept — the focus is on usability, input validation, and a clean typed boundary between client and server, not on production data or infrastructure.
 
-- Frontend: React + TypeScript + Vite + Tailwind CSS.
-  - Fast developer feedback, strong typing, and utility-first styling.
-- Backend: Node + Express + TypeScript.
-  - Simple API layer, easy request handling, and good alignment with the frontend stack.
-- HTTP: Axios for frontend requests.
-- Data: JSON-based recommendation dataset and server-side scoring logic.
+## Tech Stack
 
-This stack is lightweight and practical for building a focused demo with typed boundaries between frontend and backend.
+**Frontend**
+- React + TypeScript
+- Vite (dev server / build tooling)
+- Tailwind CSS (utility-first styling)
+- Axios (HTTP client)
 
-## What did you delegate to AI tools vs. do manually?
+**Backend**
+- Node.js + Express + TypeScript
+- JSON-based recommendation dataset
+- Server-side scoring logic for matching cars to user input
 
-- Delegated to AI tools:
-  - Drafting this README and structuring the summary.
-  - Helping shape feature logic and validation flow.
-  - Suggesting UI improvements and card layout refinements.
-- Done manually:
-  - Editing actual source files and verifying build output.
-  - Ensuring validation gating and form state behavior were correct.
-  - Running the local build process and confirming no compile issues.
+**Rationale:** a lightweight, fully typed stack was chosen to keep the client/server contract explicit and to maximize iteration speed for a focused demo, without the overhead of a heavier state management library or a production data layer.
 
-## Where did the tools help most?
+## Project Structure
 
-The tools helped most with:
+```
+ai-car-advisor/
+├── client/                # React + TypeScript + Vite frontend
+│   ├── src/
+│   │   ├── components/    # UI components (forms, recommendation cards)
+│   │   ├── types/         # Shared TypeScript types
+│   │   └── App.tsx
+│   └── vite.config.ts
+├── server/                # Express + TypeScript backend
+│   ├── src/
+│   │   ├── routes/        # API route handlers
+│   │   ├── data/          # JSON recommendation dataset
+│   │   └── services/      # Scoring / recommendation logic
+│   └── tsconfig.json
+└── README.md
+```
 
-- Generating a concise, cohesive README narrative.
-- Finding and fixing form validation state issues.
-- Creating cleaner recommendation card structure and fallback image handling.
+> Adjust the tree above to match your actual folder layout if it differs.
 
-## Where did they get in the way?
+## Getting Started
 
-- They sometimes produced overly broad or verbose suggestions that needed pruning.
-- I had to manually verify code context and ensure edits matched the existing project layout.
-- The large embedded image made the document heavier than a normal README.
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-## If you had another 4 hours, what would you add?
+### Installation
 
-- A persistent backend data store and user profile flow.
-- Real image assets for each recommendation, served from a proper `public/` folder.
-- More advanced recommendation scoring, filtering, and comparisons.
-- A complete mobile-first onboarding experience.
-- Deployment setup with Docker and automated build scripts.
+```bash
+# clone the repo
+git clone <repo-url>
+cd ai-car-advisor
+
+# install backend deps
+cd server && npm install
+
+# install frontend deps
+cd ../client && npm install
+```
+
+### Running locally
+
+```bash
+# start the backend (from /server)
+npm run dev
+
+# start the frontend (from /client)
+npm run dev
+```
+
+By default the frontend expects the API to be reachable at the URL set in `VITE_API_BASE_URL` (see below).
+
+## Environment Variables
+
+**server/.env**
+```
+PORT=5000
+```
+
+**client/.env**
+```
+VITE_API_BASE_URL=http://localhost:5000
+```
+
+## API
+
+### `POST /api/recommendations`
+
+Returns ranked car recommendations based on submitted budget and preferences.
+
+**Request body**
+```json
+{
+  "budget": 25000,
+  "preferences": {
+    "bodyType": "sedan",
+    "fuelType": "petrol",
+    "priority": "fuel-efficiency"
+  }
+}
+```
+
+**Response**
+```json
+{
+  "recommendations": [
+    {
+      "id": "car_001",
+      "make": "Toyota",
+      "model": "Corolla",
+      "price": 23500,
+      "score": 92,
+      "matchReasons": ["within budget", "fuel-efficient", "sedan body type"]
+    }
+  ]
+}
+```
+
+> Update endpoint names, payload shape, and examples to match the actual implementation.
+
+## Scripts
+
+| Location | Command | Description |
+|----------|---------|-------------|
+| `/server` | `npm run dev` | Start API in watch mode |
+| `/server` | `npm run build` | Compile TypeScript to `dist/` |
+| `/client` | `npm run dev` | Start Vite dev server |
+| `/client` | `npm run build` | Production build |
+
+## Scope & Limitations
+
+This is a demo-scoped build. Deliberately out of scope:
+
+- No authentication or persisted user accounts
+- No production car dataset or external car API integration
+- No advanced state management library or offline support
+- No production image asset pipeline
+- No deployment automation or CI configuration
+
+## Roadmap
+
+- [ ] Persistent backend data store and user profile flow
+- [ ] Real image assets served from a proper `public/` folder per recommendation
+- [ ] More advanced scoring, filtering, and comparison logic
+- [ ] Mobile-first onboarding flow
+- [ ] Dockerized deployment with automated build scripts
+
+---
+
+### Build notes (AI-assisted development)
+
+AI tooling was used to draft this README, help shape feature/validation logic, and suggest UI refinements for the recommendation cards. All source edits, build verification, and validation-state correctness were done and confirmed manually.
