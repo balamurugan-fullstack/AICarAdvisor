@@ -6,18 +6,18 @@ import NotFound from '../pages/NotFound';
 export const routes: RouteObject[] = [
   {
     path: '/',
-    element: <Home />, 
+    element: <Home />,
   },
   {
     path: '/buyer-preferences',
-    element: <BuyerPreference />, 
-  },
-  {
-    path: '*',
-    element: <Navigate to="/404" replace />,
+    element: <BuyerPreference />,
   },
   {
     path: '/404',
-    element: <NotFound />, 
+    element: <NotFound />,
+  },
+  {
+    path: '*',
+    element: <NotFound />,
   },
 ];
